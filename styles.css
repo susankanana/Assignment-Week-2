@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(230, 17%, 14%);
+}
+.content {
+  width: 90%;
+  height: 90%;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.inner_content {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+.dashboard_left {
+}
+.dashboard_right {
+}
+.cards_main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px;
+  justify-content: space-between;
+}
+.frame_main_one {
+  background-color: hsl(208, 92%, 53%);
+
+  position: relative;
+  margin: 10px;
+  border-radius: 5px;
+}
+.frame_main_two {
+  background-color: hsl(203, 89%, 53%);
+
+  position: relative;
+  margin: 10px;
+  border-radius: 5px;
+}
+.frame_main_three {
+  background-image: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(329, 70%, 58%)
+  );
+
+  position: relative;
+  margin: 10px;
+  border-radius: 5px;
+}
+.frame_main_four {
+  background-color: hsl(348, 97%, 39%);
+  position: relative;
+  margin: 10px;
+  border-radius: 5px;
+}
+.main {
+  background-color: hsl(228, 28%, 20%);
+  height: 98%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.main h3{
+    color: rgb(113, 125, 171);
+    font-weight: 300;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.logo p{
+    color: rgb(113, 125, 171);
+    font-weight: 600;
+}
+.green {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.green img {
+  width: 10px;
+  height: 10px;
+}
+.line {
+  padding: 30px 0 20px 0;
+  font-size: 30px;
+}
+.cards {
+  padding: 10px;
+  background-color: hsl(230, 17%, 14%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  gap: 20px;
+  justify-content: space-between;
+}
+.card {
+  background-color: hsl(228, 28%, 20%);
+  display: flex;
+  flex-direction: column;
+  flex: 20%;
+  border-radius: 5px;
+}
+.card_top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+.card_bottom {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.card_top img {
+  width: 20px;
+  height: 20px;
+}
+.card_top p{
+    color: rgb(113, 125, 171);
+}
+.card_bottom h3 {
+  font-weight: 700;
+  font-size: 30px;
+}
+.card_bottom p .red {
+  color: hsl(356, 69%, 56%);
+}
+.card_bottom p {
+  color: hsl(163, 72%, 41%);
+}
